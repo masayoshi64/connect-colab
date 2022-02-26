@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "connect_colab",
+    "version": "1.0",
+    "description": "avoid disconnecting form colab",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://colab.research.google.com/*"
+            ],
+            "js": [
+                "main.js"
+            ]
+        }
+    ]
+}
